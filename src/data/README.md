@@ -1,7 +1,7 @@
-# SouthPark Chatbot Data
+# Data
 
-To regenerate the `processed` data, please
+Please run `python3 split_data.py` to get the splited train/val/test data.<br>
 
-1. download the [Cornell Movie-Dialogs Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html) into this folder and unzip it.
-
-2. remove the `src/processed` folder and run `python data.py`.
+The script will automactically generate two folders:
+* general_data: store `cornell_movie_dialogs` data, `south_park/general_train.txt` data and `simpsons/fine_tune.txt` data
+* persona_data: store `south_park/fine_tune.txt` data

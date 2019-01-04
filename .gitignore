@@ -1,18 +1,28 @@
 # ignore the log file
 nohup.out
 
+.DS_Store
+
 *.pdf
 
 *.SUNet
 *.pyc
 .env/*
-src/data/**
+# src/data/**
 !src/data/README.md
 ! **/.gitkeep
-src/checkpoints/**
 src/processed/output_convo.txt
+src/checkpoints/**
 
 examples/data
 examples/graphs/*
 examples/checkpoints/*
 examples/visualization/*
+
+# splitted data
+src/data/general_data/*
+src/data/persona_data/*
+
+# word embedding
+src/data/word_embedding/**
+!src/data/word_embedding/filtered.*.txt
